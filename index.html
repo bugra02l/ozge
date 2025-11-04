@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Özgem beni Affet nolur bitanem</title>
+  <meta name="description" content="Özge için hazırlanan özür ve sevgi sayfası." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Poppins','system-ui','-apple-system','Segoe UI','Roboto','Inter','Arial'] },
+          colors: {
+            love: {
+              50: '#fff1f7', 100:'#ffe4f0', 200:'#fec7e1', 300:'#f99dca', 400:'#f472b6', 500:'#ec4899', 600:'#db2777', 700:'#be185d', 800:'#9d174d', 900:'#831843'
+            }
+          },
+          boxShadow: {
+            glow: '0 10px 30px -10px rgba(236,72,153,.6)'
+          },
+          borderRadius: { pill: '9999px' },
+          keyframes: {
+            float: {
+              '0%': { transform:'translateY(0px) scale(1)' },
+              '50%': { transform:'translateY(-12px) scale(1.03)' },
+              '100%': { transform:'translateY(0px) scale(1)' }
+            },
+            fall: {
+              '0%': { transform:'translateY(-120vh) rotate(0deg)', opacity:0 },
+              '10%': { opacity:1 },
+              '100%': { transform:'translateY(110vh) rotate(360deg)', opacity:0.8 }
+            },
+            pulseGlow: {
+              '0%, 100%': { boxShadow:'0 0 0 0 rgba(236,72,153,0.6)' },
+              '50%': { boxShadow:'0 0 45px 10px rgba(236,72,153,0.25)' }
+            }
+          },
+          animation: {
+            float:'float 5s ease-in-out infinite',
+            fall:'fall var(--d,9s) linear var(--delay,0s) infinite',
+            pulseGlow:'pulseGlow 2.4s ease-in-out infinite'
+          }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <style>
+    html { font-family: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial; }
+    .heart { position: fixed; top: -10vh; left: var(--x, 50%); font-size: var(--s, 22px); opacity: .9; pointer-events:none; filter: drop-shadow(0 6px 10px rgba(236,72,153,.45)); }
+  </style>
+</head>
+<body class="bg-white text-slate-800">
+  <!-- Arka plan pembe degrade -->
+  <div class="fixed inset-0 -z-10 bg-gradient-to-b from-love-50 via-white to-love-100"></div>
+
+  <!-- Üst bar -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-love-100">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <h1 class="text-lg md:text-xl font-extrabold text-love-700">Özgem beni Affet nolur bitanem</h1>
+      <div class="flex items-center gap-2">
+        <button id="heartsToggle" class="px-3 py-1.5 rounded-pill border border-love-300 text-love-700 hover:bg-love-50 transition">💖 Kalpler</button>
+        <button id="themeBtn" class="px-3 py-1.5 rounded-pill border border-love-300 text-love-700 hover:bg-love-50 transition">🌙/☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-5xl mx-auto px-4 pt-10 md:pt-16 pb-10">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-pill bg-love-100 text-love-700 text-sm font-semibold shadow-glow">Aşkım • Birtanem • Sevgilim</div>
+        <h2 class="mt-4 text-4xl md:text-5xl font-extrabold leading-tight text-slate-900">
+          Özge’m, <span class="text-love-600">lütfen beni affet</span>
+        </h2>
+        <p class="mt-4 text-slate-600">Kalbimin en içinden yazıyorum. Bu sayfayı, hatamı telafi etmek ve sana olan sevgimi sonsuza dek saklamak için hazırladım.</p>
+        <p class="mt-3 text-slate-500 text-sm">Mini not: <span class="font-semibold text-slate-700">Askm seni çok seviyorum; söz bundan sonra ilişkide yalan söylemeyeceğim, bundan sonra adam olacağım. Hayallerimiz var bitanem… sensiz yapamıyorum. Seni özledim bitanemm; lütfen geri dön. Çok pişmanım. Seni seviyorum; Allah şahidim olsun seni bırakmam.</span></p>
+        <div class="mt-6 flex items-center gap-3">
+          <a href="#ozur" class="px-5 py-3 rounded-2xl bg-love-600 text-white font-semibold shadow-glow hover:bg-love-700 transition">Özürümü Oku</a>
+          <a href="#muzik" class="px-5 py-3 rounded-2xl border border-love-300 text-love-700 font-semibold hover:bg-love-50 transition">Şarkımız</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="p-1 rounded-3xl bg-gradient-to-br from-love-300 to-love-600 shadow-glow">
+          <div class="rounded-2xl bg-white p-6 md:p-8">
+            <p class="text-xl md:text-2xl font-bold text-slate-900">“Seni her şeyden çok seviyorum.”</p>
+            <p class="mt-2 text-slate-600">Hatalarımla yüzleşiyorum. Söz veriyorum: güvenini onarmak için her gün emek vereceğim.</p>
+            <div class="mt-4 grid grid-cols-3 gap-2 text-center">
+              <div class="p-3 rounded-xl bg-love-50">
+                <div class="text-2xl">💘</div>
+                <div class="text-xs text-slate-500">Güven</div>
+              </div>
+              <div class="p-3 rounded-xl bg-love-50">
+                <div class="text-2xl">🤝</div>
+                <div class="text-xs text-slate-500">Saygı</div>
+              </div>
+              <div class="p-3 rounded-xl bg-love-50">
+                <div class="text-2xl">🏡</div>
+                <div class="text-xs text-slate-500">Hayaller</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Müzik Bölümü -->
+  <section id="muzik" class="max-w-5xl mx-auto px-4 pb-12">
+    <h3 class="text-2xl md:text-3xl font-bold">Şarkımız: <span class="text-love-600">Cengiz Kurtoğlu - Liselim</span></h3>
+    <p class="mt-2 text-slate-600 text-sm">Bu şarkı sana yazdığım her cümlenin fonu gibi… Aç ve birlikte dinleyelim.</p>
+    <div class="mt-4 rounded-2xl overflow-hidden shadow-glow">
+      <div class="aspect-video">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/?listType=search&list=Cengiz%20Kurto%C4%9Flu%20Liselim" title="Cengiz Kurtoğlu - Liselim" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <p class="mt-3 text-xs text-slate-500">Eğer video açılmazsa: <a class="underline text-love-700 font-semibold" href="https://www.youtube.com/results?search_query=Cengiz+Kurto%C4%9Flu+Liselim" target="_blank" rel="noopener">YouTube’da aç</a>.</p>
+  </section>
+
+  <!-- Galeri (Yüklenen fotoğraflar) -->
+  <section id="galeri" class="max-w-5xl mx-auto px-4 pb-12">
+    <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">Bizden Kareler</h3>
+    <p class="mt-2 text-slate-600 text-sm">Bu anları unutmamak için… <span class="text-xs block mt-1 text-slate-500">Not: Editörde yerel dosya yolu (/mnt/data) görselleri göstermeyebilir. İndirilebilir tek dosyalık sürümde fotoğraflar <strong>görünür</strong>.</span></p>
+    <div class="mt-4 grid sm:grid-cols-2 gap-4">
+      <figure class="rounded-2xl overflow-hidden border border-love-100 shadow-glow bg-white">
+        <img src="/mnt/data/1d5996d0-c3b0-4518-9c81-750b8889218b.jpg" alt="Birlikte çekilmiş ayaklar ve elde kırmızı gül" class="w-full h-full object-cover"/>
+        <figcaption class="p-3 text-sm text-slate-600">İlk gül, ilk heyecan…</figcaption>
+      </figure>
+      <figure class="rounded-2xl overflow-hidden border border-love-100 shadow-glow bg-white">
+        <img src="/mnt/data/38d3518f-f7fe-4e93-a1dc-cabf186d4fac.jpg" alt="El ele tutuşurken anı" class="w-full h-full object-cover"/>
+        <figcaption class="p-3 text-sm text-slate-600">Elimi tuttun, dünya sustu.</figcaption>
+      </figure>
+      <figure class="rounded-2xl overflow-hidden border border-love-100 shadow-glow bg-white sm:col-span-2">
+        <img src="/mnt/data/a9665c4a-a627-49f3-a150-78e592400c96.jpg" alt="Çiçeklerle poz veren portre" class="w-full h-full object-cover"/>
+        <figcaption class="p-3 text-sm text-slate-600">Gülüşünle güzelleşen her yer…</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Özür Mesajı -->
+  <section id="ozur" class="max-w-3xl mx-auto px-4 pb-16">
+    <div class="rounded-3xl p-6 md:p-10 bg-white/90 border border-love-100 shadow-glow">
+      <h3 class="text-2xl md:text-3xl font-extrabold text-slate-900">Özür Mesajım</h3>
+      <p class="mt-4 leading-8 text-slate-700 whitespace-pre-line">
+Aşkım, birtanem, sevgilim...
+O gün seni kırdığım için kendimden nefret ettim.
+O kahve konusu yüzünden aramıza giren o kız yalan söyledi, ama ben seni o an yeterince inandıramadım.
+Beni dinlemeden gittin, ama ben o günden beri her gün seni düşündüm, her gece seni özledim.
+
+Hayatımda kimseye senin gibi bakmadım, kimseye senin gibi hissetmedim.
+Allah şahidim olsun, ben seni asla aldatmadım.
+Tek hatam seni sakinleştiremeyip susmaktı… ama içimden “Özge’m dönecek” diye dua ettim her gece.
+
+Askm, seni çok seviyorum. Söz veriyorum, bundan sonra ilişkimizde yalan yok, kırgınlık yok.
+Artık adam olacağım, çünkü senin gibi birini bir daha bulamam.
+
+Hayallerimiz var bitanem… Sensiz hiçbir şeyin anlamı yok.
+Lütfen geri dön.
+
+Seni seviyorum, Allah şahidim olsun seni asla bırakmam. 💖
+      </p>
+      <div class="mt-6 flex flex-wrap gap-2">
+        <span class="px-3 py-1 rounded-pill bg-love-100 text-love-700 text-xs font-semibold">Aşkım</span>
+        <span class="px-3 py-1 rounded-pill bg-love-100 text-love-700 text-xs font-semibold">Birtanem</span>
+        <span class="px-3 py-1 rounded-pill bg-love-100 text-love-700 text-xs font-semibold">Sevgilim</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sabit alt bar -->
+  <footer class="border-t border-love-100 bg-white/80 backdrop-blur sticky bottom-0">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-sm text-slate-500">Ferhan’dan Özge’ye sonsuz sevgiyle 💗</p>
+      <div class="flex items-center gap-3">
+        <a href="#muzik" class="px-4 py-2 rounded-2xl bg-love-600 text-white text-sm font-semibold hover:bg-love-700 shadow-glow">Şarkıyı Aç</a>
+        <button id="fullscreenBtn" class="px-4 py-2 rounded-2xl border border-love-300 text-love-700 text-sm font-semibold hover:bg-love-50">Tam Ekran</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Kalp yağmuru -->
+  <script>
+    // Tema toggle
+    const themeBtn = document.getElementById('themeBtn');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && prefersDark)) {
+      document.documentElement.classList.add('dark');
+    }
+    themeBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark':'light');
+    });
+
+    // Tam ekran
+    document.getElementById('fullscreenBtn').addEventListener('click', () => {
+      if (!document.fullscreenElement) document.documentElement.requestFullscreen(); else document.exitFullscreen();
+    });
+
+    // Kalpler
+    const heartsToggle = document.getElementById('heartsToggle');
+    let heartsOn = true;
+
+    function spawnHeart(){
+      if (!heartsOn) return;
+      const h = document.createElement('div');
+      h.className = 'heart animate-fall select-none';
+      h.style.setProperty('--x', Math.random()*100 + 'vw');
+      h.style.setProperty('--s', (14 + Math.random()*26) + 'px');
+      h.style.setProperty('--d', (7 + Math.random()*6) + 's');
+      h.style.setProperty('--delay', (Math.random()*3) + 's');
+      h.textContent = Math.random() > .5 ? '💖' : (Math.random() > .5 ? '💗' : '💘');
+      document.body.appendChild(h);
+      setTimeout(()=> h.remove(), 14000);
+    }
+
+    const heartInterval = setInterval(spawnHeart, 450);
+    for (let i=0;i<16;i++) spawnHeart();
+
+    heartsToggle.addEventListener('click', () => { heartsOn = !heartsOn; heartsToggle.classList.toggle('bg-love-100'); });
+  </script>
+</body>
+</html>
